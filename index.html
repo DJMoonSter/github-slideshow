@@ -1,13 +1,82 @@
----
-layout: presentation
----
-
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <li>HOME</li>
+          <li>ABOUT</li>
+          <li>SERVICES</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+        <header>
+          <div class="headerdiv">
+            <h3>Your Web Presence</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+              ipsam! Nihil quo minima nulla atque!
+            </p>
+            <button>Read More</button>
+            <section>
+          </div>
+        </header>
+        <div class="membership membership1">
+            <h4>Membership</h4>
+            <p>$199/mo</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="membership membership2">
+            <h4>Pro Membership</h4>
+            <p>$299/mo</p>
+            <button>Buy Now</button>
+        </div>
+      </section>
+      <div class="box">
+          <ul>
+              <li><h4>Analytics</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+            </li>
+              <li>
+                  <h4>Marketing</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+              </li>
+              <li>
+                  <h4>Development</h4>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+              </li>
+              <li><h4>Support</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi, expedita?</p>
+            </li>
+          </ul>
+         </div>
+         <div class="yourbusiness">
+           <div><img src="images/lamp.jpg" alt=""></div>
+           <div class="yourbusiness1"><h2>Your Business On The Web</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae alias reiciendis deleniti possimus nemo non repellendus? Quae atque vero modi quidem! Autem cupiditate fugit doloribus ad amet, asperiores provident commodi.</p>
+        <button>Learn More</button>
+        </div>
+         </div>
+         <div class="imgrandom">
+             <img src="https://source.unsplash.com/random/200x200" alt="">
+             <img src="https://source.unsplash.com/random/201x200" alt="">
+             <img src="https://source.unsplash.com/random/202x200" alt="">
+             <img src="https://source.unsplash.com/random/203x200" alt="">
+             <img src="https://source.unsplash.com/random/204x200" alt="">
+             <img src="https://source.unsplash.com/random/205x200" alt="">
+             <img src="https://source.unsplash.com/random/206x200" alt="">
+             <img src="https://source.unsplash.com/random/207x200" alt="">
+             <img src="https://source.unsplash.com/random/208x200" alt="">
+         </div>
+         <footer>
+             <p>DJ Ladifyan 2020</p>
+         </footer>
+    </div>
+  </body>
+</html>
